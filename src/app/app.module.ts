@@ -6,6 +6,7 @@ import { RouterModule ,Routes} from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 
@@ -13,12 +14,16 @@ import { SigninComponent } from './signin/signin.component';
 const appRoutes:Routes=[
   {
     path:"",component:SigninComponent
+  },
+  {
+    path:"signup",component:SignupComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    SigninComponent
+    SigninComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
